@@ -1,17 +1,17 @@
 input.onButtonPressed(Button.A, function () {
-    if (ze1 == 1 && zl1 == 0) {
-        ze1 = 1
+    if (ze1 == 1) {
+        ze1 = 0
         zl1 = 1
         ce1 = 0
-    } else if (ze1 == 1 && zl1 == 1) {
+    } else if (ce1 == 0 && zl1 == 1) {
         ze1 = 0
         zl1 = 0
         ce1 = 1
-    } else if (ce1 == 1) {
-        ce1 = 0
+    } else if (zl1 == 0 && ce1 == 1) {
+        ce1 = 1
         zl1 = 1
         ze1 = 0
-    } else if (zl1 == 1 && ze1 == 0) {
+    } else if (zl1 == 1 && ce1 == 1) {
         ce1 = 0
         zl1 = 0
         ze1 = 1
